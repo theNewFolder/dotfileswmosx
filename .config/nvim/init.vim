@@ -183,11 +183,11 @@ autocmd vimenter * colorscheme gruvbox
 set mousemodel=popup
 set t_Co=256
 set guioptions=egmrti
-set gfn=CaskaydiaCove\ Nerd\ Font\ 12
+set gfn=CaskaydiaCove\ Nerd\ Font\ Mono\ 12
 
 if has("gui_running")
   if has("gui_mac") || has("gui_macvim")
-    set guifont=CaskaydiaCove\ Nerd\ Font:h12
+    set guifont=CaskaydiaCove\ Nerd\ Font\ Mono:h12
     set transparency=7
   endif
 else
