@@ -2,8 +2,8 @@
 # Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
 include "/home/hbthen3rd/.gtkrc-2.0.mine"
-gtk-theme-name="Flat-Remix-GTK-Blue-Darkest-NoBorder"
-gtk-icon-theme-name="Flat-Remix-Blue-Dark"
+gtk-theme-name="Flat-Remix-GTK-Green-Darkest-NoBorder"
+gtk-icon-theme-name="Flat-Remix-Green-Dark"
 gtk-font-name="Segoe UI 12"
 gtk-cursor-theme-name="Adwaita"
 gtk-cursor-theme-size=0

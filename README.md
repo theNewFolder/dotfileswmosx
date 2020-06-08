@@ -53,7 +53,7 @@ _There's still a lot of work to be done (i3status, conky, i3 config clean up, et
 - Misc:
   - `python2`, `pip2`, `pynvim (pip2)`
   - `python3`, `pip3`, `pynvim (pip3)`
-  - `ruby`, `ruby-dev`, `gem`, `neovim (gem)`
+  - `ruby`, `gem`, `neovim (gem)`
   - `node`, `npm`, `neovim (npm)`
   - Run `:checkhealth` in `nvim` before using the `init.vim` file
 
