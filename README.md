@@ -1,6 +1,6 @@
 # hb's dotfiles
 
-_There's still work to do (clean up, etc.)_
+_There's still a lot of work to be done (i3status, conky, i3 config clean up, etc.)_
 
 ## Screenshots
 
