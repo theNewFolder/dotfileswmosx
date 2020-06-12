@@ -12,7 +12,7 @@ bat_full = "  "
 bat_charging = "  "
 bat_discharging = "  "
 bat = "  "
-time = " "
+time = "  "
 
 [[block]]
 block = "net"
@@ -57,5 +57,5 @@ critical = 10
 
 [[block]]
 block = "time"
-format = "%l:%M:%S %p"
+format = "%r"
 interval = 1
