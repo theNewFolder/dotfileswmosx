@@ -268,7 +268,7 @@ mode "resize" {
 }
 
 # Lock screen
-bindsym $mod+9 exec --no-startup-id blurlock
+bindsym $mod+9 exec --no-startup-id pixelatedlock
 
 # Autostart applications
 exec --no-startup-id xrandr --output Virtual1 --primary --mode 1920x1200 --pos 0x0 --rotate normal
@@ -282,14 +282,14 @@ exec --no-startup-id pamac-tray
 # exec --no-startup-id blueman-applet
 # exec_always --no-startup-id sbxkb
 exec --no-startup-id conky
-exec --no-startup-id xautolock -time 10 -locker blurlock
+exec --no-startup-id xautolock -time 10 -locker pixelatedlock
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
 bar {
 	i3bar_command i3bar --transparency
-	status_command i3status
+	status_command i3status-rs
 	position top
 
 	bindsym button4 nop

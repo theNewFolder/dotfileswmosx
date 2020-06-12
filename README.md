@@ -24,8 +24,9 @@ _There's still a lot of work to be done (i3status, conky, i3 config clean up, et
 ### [i3-gaps](https://github.com/Airblader/i3/wiki/Installation)
 
 - Compositor (for transparency effect): [picom](https://github.com/yshui/picom/)
-- Widget: [Conky](https://github.com/brndnmtthws/conky/wiki/Installation#conky-on-operating-systems)
+- Status bar: [i3status-rust](https://github.com/greshake/i3status-rust)
 - Launcher: [Rofi](https://github.com/davatorium/rofi/blob/next/INSTALL.md#install-distribution)
+- Widget: [Conky](https://github.com/brndnmtthws/conky/wiki/Installation#conky-on-operating-systems)
 - Background setter: [nitrogen](https://github.com/l3ib/nitrogen/)
 - GTK:
   - Theme: [Flat Remix GTK](https://drasite.com/flat-remix-gtk)
