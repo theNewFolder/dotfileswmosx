@@ -1,7 +1,5 @@
 # hb's dotfiles
 
-_There's still a lot of work to be done (conky, nvim, i3 config clean up, etc.)_
-
 ## Screenshots
 
 ![Screenshot 1](/screenshot1.png?raw=true 'Screenshot 1')
