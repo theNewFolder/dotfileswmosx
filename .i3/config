@@ -144,11 +144,11 @@ bindsym $mod+Ctrl+Left workspace prev
 set $ws1 "1:<span size='xx-large'></span><span size='xx-small'> Terminal</span>"
 set $ws2 "2:<span size='xx-large'>爵</span><span size='xx-small'> Web</span>"
 set $ws3 "3:<span size='xx-large'></span><span size='xx-small'> Files</span>"
-set $ws4 4
-set $ws5 5
-set $ws6 6
-set $ws7 7
-set $ws8 8
+set $ws4 "4:<span size='xx-large'></span><span size='xx-small'> Workspace 4</span>"
+set $ws5 "5:<span size='xx-large'></span><span size='xx-small'> Workspace 5</span>"
+set $ws6 "6:<span size='xx-large'></span><span size='xx-small'> Workspace 6</span>"
+set $ws7 "7:<span size='xx-large'></span><span size='xx-small'> Workspace 7</span>"
+set $ws8 "8:<span size='xx-large'></span><span size='xx-small'> Workspace 8</span>"
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
