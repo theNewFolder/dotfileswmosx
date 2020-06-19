@@ -61,9 +61,9 @@
 
 ## Browsers
 
-- [qutebrowser](https://qutebrowser.org/doc/install.html) (QTWebEngine (Blink fork)) - lightweight browser for quickly looking up something (no extension/add-on) - not assigned to any workspace
-- Chromium (Blink) - JavaScript devtools + main browser for browsing - assigned to workspace 2
+- [qutebrowser](https://qutebrowser.org/doc/install.html) (QTWebEngine (Blink fork)) - lightweight browser for quickly looking up something (no extension/add-on)
+- Chromium (Blink) - JavaScript devtools + main browser for browsing
   - [uBlock Origin](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm)
-- Firefox (Gecko) - CSS devtools - assigned to workspace 2
+- Firefox (Gecko) - CSS devtools
   - [uBlock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
-- [GNOME Web (Epiphany)](https://wiki.gnome.org/Apps/Web) (Webkit) - browser for dev testing (no extension/add-on) - assigned to workspace 2
+- [GNOME Web (Epiphany)](https://wiki.gnome.org/Apps/Web) (Webkit) - browser for dev testing (no extension/add-on)
