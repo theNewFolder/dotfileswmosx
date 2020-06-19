@@ -48,6 +48,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+Plug 'preservim/nerdcommenter'
 
 if isdirectory('/usr/local/opt/fzf')
   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
@@ -714,3 +715,8 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " coc-yank
 nnoremap <silent> <space>y  :<C-u>CocList -A --normal yank<cr>
+
+"*****************************************************************************
+"" nerdcommenter
+"*****************************************************************************
+filetype plugin on

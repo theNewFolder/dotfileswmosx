@@ -144,8 +144,8 @@ bindsym $mod+Ctrl+Left workspace prev
 set $ws1 "1:<span size='xx-large'></span><span size='xx-small'> Terminal</span>"
 set $ws2 "2:<span size='xx-large'>爵</span><span size='xx-small'> Web</span>"
 set $ws3 "3:<span size='xx-large'></span><span size='xx-small'> Files</span>"
-set $ws4 "4:<span size='xx-large'></span><span size='xx-small'> Workspace 4</span>"
-set $ws5 "5:<span size='xx-large'></span><span size='xx-small'> Workspace 5</span>"
+set $ws4 "4:<span size='xx-large'></span><span size='xx-small'> Social</span>"
+set $ws5 "5:<span size='xx-large'></span><span size='xx-small'> Music</span>"
 set $ws6 "6:<span size='xx-large'></span><span size='xx-small'> Workspace 6</span>"
 set $ws7 "7:<span size='xx-large'></span><span size='xx-small'> Workspace 7</span>"
 set $ws8 "8:<span size='xx-large'></span><span size='xx-small'> Workspace 8</span>"
@@ -189,6 +189,9 @@ assign [class="firefox"] $ws2
 assign [class="Chromium"] $ws2
 assign [class="Epiphany"] $ws2
 assign [class="Pcmanfm"] $ws3
+assign [class="discord"] $ws4
+assign [class="Microsoft Teams - Preview"] $ws4
+assign [class="Spotify"] $ws5
 
 # Open specific applications in floating mode
 for_window [title="alsamixer"] floating enable border pixel 1
