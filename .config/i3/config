@@ -279,7 +279,7 @@ mode "resize" {
 bindsym $mod+shift+x exec --no-startup-id pixelatedlock
 
 # Autostart applications
-exec --no-startup-id xrandr --output Virtual1 --primary --mode 2560x1600 --pos 0x0 --rotate normal --dpi 150
+exec --no-startup-id xrandr --output Virtual1 --primary --mode 2560x1600 --pos 0x0 --rotate normal
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id nitrogen --restore; sleep 1; picom -b
 # exec --no-startup-id manjaro-hello

@@ -1,54 +1,23 @@
-" vim-bootstrap
-
-"*****************************************************************************
-"" Vim-PLug core
-"*****************************************************************************
-let vimplug_exists=expand('~/.config/nvim/autoload/plug.vim')
-
-let g:vim_bootstrap_langs = "html,javascript,php,python,typescript"
-let g:vim_bootstrap_editor = "nvim"				" nvim or vim
-
-if !filereadable(vimplug_exists)
-  if !executable("curl")
-    echoerr "You have to install curl or first install vim-plug yourself!"
-    execute "q!"
-  endif
-  echo "Installing Vim-Plug..."
-  echo ""
-  silent exec "!\curl -fLo " . vimplug_exists . " --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
-  let g:not_finish_vimplug = "yes"
-
-  autocmd VimEnter * PlugInstall
-endif
-
-" Required:
 call plug#begin(expand('~/.config/nvim/plugged'))
 
-"*****************************************************************************
-"" Plug install packages
-"*****************************************************************************
 Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb' " required by fugitive to :Gbrowse
 Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
+Plug 'ryanoasis/vim-devicons'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'vim-scripts/grep.vim'
 Plug 'vim-scripts/CSApprox'
 Plug 'Raimondi/delimitMate'
 Plug 'majutsushi/tagbar'
-Plug 'w0rp/ale'
 Plug 'Yggdroot/indentLine'
-Plug 'avelino/vim-bootstrap-updater'
-Plug 'sheerun/vim-polyglot'
-Plug 'tpope/vim-rhubarb' " required by fugitive to :Gbrowse
-Plug 'ryanoasis/vim-devicons'
-Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
-Plug 'preservim/nerdcommenter'
 
 if isdirectory('/usr/local/opt/fzf')
   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
@@ -56,6 +25,7 @@ else
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
   Plug 'junegunn/fzf.vim'
 endif
+
 let g:make = 'gmake'
 if exists('make')
         let g:make = 'make'
@@ -66,14 +36,6 @@ Plug 'Shougo/vimproc.vim', {'do': g:make}
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-session'
 
-"" Snippets
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
-
-"*****************************************************************************
-"" Custom bundles
-"*****************************************************************************
-
 " html
 "" HTML Bundle
 Plug 'hail2u/vim-css3-syntax'
@@ -81,41 +43,27 @@ Plug 'gorodinskiy/vim-coloresque'
 Plug 'tpope/vim-haml'
 Plug 'mattn/emmet-vim'
 
-
 " javascript
 "" Javascript Bundle
 Plug 'jelera/vim-javascript-syntax'
 
-
 " php
 "" PHP Bundle
 Plug 'arnaud-lb/vim-php-namespace'
-
 
 " python
 "" Python Bundle
 Plug 'davidhalter/jedi-vim'
 Plug 'raimon49/requirements.txt.vim', {'for': 'requirements'}
 
-
 " typescript
 Plug 'leafgarland/typescript-vim'
 Plug 'HerringtonDarkholme/yats.vim'
-
-
-"*****************************************************************************
-"*****************************************************************************
-
-"" Include user's extra bundle
-if filereadable(expand("~/.config/nvim/local_bundles.vim"))
-  source ~/.config/nvim/local_bundles.vim
-endif
 
 call plug#end()
 
 " Required:
 filetype plugin indent on
-
 
 "*****************************************************************************
 "" Basic Setup
@@ -124,7 +72,6 @@ filetype plugin indent on
 set encoding=utf-8
 set fileencoding=utf-8
 set fileencodings=utf-8
-
 
 "" Fix backspace indent
 set backspace=indent,eol,start
@@ -190,15 +137,10 @@ else
   let g:indentLine_char = '┆'
   let g:indentLine_faster = 1
 
-
 endif
 
 "" Enable mouse
 set mouse=a
-
-"" Disable the blinking cursor. (not used)
-"" set gcr=a:blinkon0
-"" set scrolloff=3
 
 "" Status bar
 set laststatus=2
@@ -225,7 +167,6 @@ endif
 " vim-airline
 let g:airline_theme = 'gruvbox'
 let g:airline#extensions#branch#enabled = 1
-let g:airline#extensions#ale#enabled = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tagbar#enabled = 1
 let g:airline_skip_empty_sections = 1
@@ -266,7 +207,6 @@ let Grep_Skip_Dirs = '.git node_modules'
 
 " terminal emulation
 nnoremap <silent> <leader>sh :terminal<CR>
-
 
 "*****************************************************************************
 "" Commands
@@ -332,6 +272,8 @@ noremap <Leader>gs :Gstatus<CR>
 noremap <Leader>gb :Gblame<CR>
 noremap <Leader>gd :Gvdiff<CR>
 noremap <Leader>gr :Gremove<CR>
+"" Open current line on GitHub
+nnoremap <Leader>o :.Gbrowse<CR>
 
 " session management
 nnoremap <leader>so :OpenSession<Space>
@@ -348,7 +290,7 @@ nnoremap <silent> <S-t> :tabnew<CR>
 nnoremap <leader>. :lcd %:p:h<CR>
 
 "" Opens an edit command with the path of the currently edited file filled in
-noremap <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
+" noremap <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 
 "" Opens a tab edit command with the path of the currently edited file filled
 noremap <Leader>te :tabe <C-R>=expand("%:p:h") . "/" <CR>
@@ -377,24 +319,9 @@ nnoremap <silent> <leader>e :FZF -m<CR>
 "Recovery commands from history through FZF
 nmap <leader>y :History:<CR>
 
-" snippets
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsJumpBackwardTrigger="<c-b>"
-let g:UltiSnipsEditSplit="vertical"
-
-" ale
-let g:ale_linters = {}
-
 " Tagbar
 nmap <silent> <F4> :TagbarToggle<CR>
 let g:tagbar_autofocus = 1
-
-" Disable visualbell
-set noerrorbells visualbell t_vb=
-if has('autocmd')
-  autocmd GUIEnter * set visualbell t_vb=
-endif
 
 "" Copy/Paste/Cut
 if has('unnamedplus')
@@ -437,9 +364,6 @@ vmap > >gv
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 
-"" Open current line on GitHub
-nnoremap <Leader>o :.Gbrowse<CR>
-
 "*****************************************************************************
 "" Custom configs
 "*****************************************************************************
@@ -447,7 +371,6 @@ nnoremap <Leader>o :.Gbrowse<CR>
 " html
 " for html files, 2 spaces
 autocmd Filetype html setlocal ts=2 sw=2 expandtab
-
 
 " javascript
 let g:javascript_enable_domhtmlcss = 1
@@ -458,9 +381,7 @@ augroup vimrc-javascript
   autocmd FileType javascript setl tabstop=2|setl shiftwidth=2|setl expandtab softtabstop=2
 augroup END
 
-
 " php
-
 
 " python
 " vim-python
@@ -482,31 +403,14 @@ let g:jedi#show_call_signatures = "0"
 let g:jedi#completions_command = "<C-Space>"
 let g:jedi#smart_auto_mappings = 0
 
-" ale
-:call extend(g:ale_linters, {
-    \'python': ['flake8'], })
-
 " vim-airline
 let g:airline#extensions#virtualenv#enabled = 1
 
 " Syntax highlight
-" Default highlight is better than polyglot
-let g:polyglot_disabled = ['python']
 let python_highlight_all = 1
-
 
 " typescript
 let g:yats_host_keyword = 1
-
-
-
-"*****************************************************************************
-"*****************************************************************************
-
-"" Include user's local vim config
-if filereadable(expand("~/.config/nvim/local_init.vim"))
-  source ~/.config/nvim/local_init.vim
-endif
 
 "*****************************************************************************
 "" Convenience variables
@@ -577,16 +481,16 @@ endif
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
 " other plugin before putting this into your config.
-" inoremap <silent><expr> <TAB>
-"       \ pumvisible() ? "\<C-n>" :
-"       \ <SID>check_back_space() ? "\<TAB>" :
-"       \ coc#refresh()
-" inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
-"
-" function! s:check_back_space() abort
-"   let col = col('.') - 1
-"   return !col || getline('.')[col - 1]  =~# '\s'
-" endfunction
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
 
 " Use <c-space> to trigger completion.
 inoremap <silent><expr> <c-space> coc#refresh()
@@ -629,8 +533,8 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 nmap <leader>rn <Plug>(coc-rename)
 
 " Formatting selected code.
-xmap <leader>f  <Plug>(coc-format-selected)
-nmap <leader>f  <Plug>(coc-format-selected)
+xmap <leader>ff  <Plug>(coc-format-selected)
+nmap <leader>ff  <Plug>(coc-format-selected)
 
 augroup mygroup
   autocmd!
@@ -698,7 +602,6 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
-
 "*****************************************************************************
 "" coc extensions configs/mappings
 "*****************************************************************************
@@ -716,7 +619,3 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 " coc-yank
 nnoremap <silent> <space>y  :<C-u>CocList -A --normal yank<cr>
 
-"*****************************************************************************
-"" nerdcommenter
-"*****************************************************************************
-filetype plugin on
