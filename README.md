@@ -70,3 +70,8 @@
 - Firefox (Gecko) - CSS devtools
   - [uBlock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
 - [GNOME Web (Epiphany)](https://wiki.gnome.org/Apps/Web) (Webkit) - browser for dev testing (no extension/add-on)
+
+## Other tools
+
+- [exa](https://the.exa.website/#installation)
+- [ytop](https://github.com/cjbassi/ytop#installation)
