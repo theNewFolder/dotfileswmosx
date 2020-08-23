@@ -75,4 +75,12 @@
 ## Other tools
 
 - [exa](https://the.exa.website/#installation)
+- [The Silver Searcher (ag)](https://github.com/ggreer/the_silver_searcher#linux)
+- [fzf](https://github.com/junegunn/fzf#using-linux-package-managers)
+- [bat](https://github.com/sharkdp/bat#on-arch-linux)
+- [ripgrep (rg)](https://github.com/BurntSushi/ripgrep#installation)
+- [dust](https://github.com/bootandy/dust#install)
 - [ytop](https://github.com/cjbassi/ytop#installation)
+- [procs](https://github.com/dalance/procs#installation)
+- [bandwhich](https://github.com/imsnif/bandwhich#arch-linux)
+- [tealdeer (tldr)](https://github.com/dbrgn/tealdeer#from-package-manager)
