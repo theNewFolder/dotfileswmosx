@@ -99,13 +99,6 @@
 
 ## Other tools
 
-- [exa](https://the.exa.website/#installation)
-- [fzf](https://github.com/junegunn/fzf#using-linux-package-managers)
-- [bat](https://github.com/sharkdp/bat#on-arch-linux)
-- [ripgrep (rg)](https://github.com/BurntSushi/ripgrep#installation)
-- [ytop](https://github.com/cjbassi/ytop#installation) // fix
-- [procs](https://github.com/dalance/procs#installation)
-
 - `cat` > [`bat`](https://github.com/sharkdp/bat#on-macos-or-linux-via-homebrew)
 - `find` > [`fd`](https://github.com/sharkdp/fd#on-macos)
 - [`fzf`](https://github.com/junegunn/fzf#using-homebrew)
