@@ -57,11 +57,7 @@
 
 - Plugin manager + Starter template: [LazyVim](https://www.lazyvim.org/installation)
 - Misc:
-  - `python2`, `pip2`, `pynvim (pip2)`
-  - `python3`, `pip3`, `pynvim (pip3)`
-  - `ruby`, `gem`, `neovim (gem)`
-  - `node`, `npm`, `neovim (npm)`
-  - Run `:checkhealth` in `nvim`
+  - Run `:checkhealth` in `nvim` and install all dependencies
 
 ## File + Web Browsers
 
