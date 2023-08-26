@@ -203,8 +203,8 @@ sketchybar --add item time right                        \
                            background.border_width=0    \
                            background.height=24         \
                            icon=$ICON_CALENDAR          \
-                           icon.color=$YELLOW           \
-                           label.color=$YELLOW
+                           icon.color=$RED              \
+                           label.color=$RED
 
 sketchybar --add bracket clock time date                    \
            --set         clock background.color=$BACKGROUND \
