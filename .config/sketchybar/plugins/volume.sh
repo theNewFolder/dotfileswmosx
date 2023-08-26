@@ -3,25 +3,26 @@
 # The volume_change event supplies a $INFO variable in which the current volume
 # percentage is passed to the script.
 
-source "$HOME/.config/colors.sh" # Loads all defined colors
+source "$HOME/.config/colors.sh"
+source "$HOME/.config/icons.sh"
 
 VOLUME=$INFO
 
 case $VOLUME in
 [6-9][0-9] | 100)
-	ICON=""
+	ICON=${ICONS_VOLUME[3]}
 	COLOR=$BRIGHT_MAGENTA
 	;;
 [3-5][0-9])
-	ICON=""
+	ICON=${ICONS_VOLUME[2]}
 	COLOR=$BRIGHT_MAGENTA
 	;;
 [1-9] | [1-2][0-9])
-	ICON=""
+	ICON=${ICONS_VOLUME[1]}
 	COLOR=$MAGENTA
 	;;
 *)
-	ICON=""
+	ICON=${ICONS_VOLUME[0]}
 	COLOR=$MAGENTA
 	;;
 esac
