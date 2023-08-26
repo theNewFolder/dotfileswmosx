@@ -3,7 +3,8 @@
 # For a more advanced configuration example see my dotfiles:
 # https://github.com/FelixKratz/dotfiles
 
-source "$HOME/.config/colors.sh" # Loads all defined colors
+source "$HOME/.config/colors.sh"
+source "$HOME/.config/icons.sh"
 
 PLUGIN_DIR="$HOME/.config/sketchybar/plugins"
 
@@ -51,7 +52,7 @@ sketchybar --add item command.logo left                                         
                                    background.border_width=0                                                \
                                    background.corner_radius=6                                               \
                                    background.height=24                                                     \
-                                   icon=󰘳                                                                   \
+                                   icon=$ICON_CMD                                                           \
                                    icon.highlight=on                                                        \
                                    icon.padding_left=4                                                      \
                                    icon.padding_right=4                                                     \
@@ -64,7 +65,7 @@ sketchybar --add item command.logo left                                         
                                    popup.background.border_color=$GREEN                                     \
                                                                                                             \
            --add item command.preferences popup.command.logo                                                \
-           --set      command.preferences icon=󰒓                                                            \
+           --set      command.preferences icon=$ICON_SETTINGS                                               \
                                           icon.color=$GREEN                                                 \
                                           icon.padding_left=4                                               \
                                           icon.padding_right=2                                              \
@@ -75,7 +76,7 @@ sketchybar --add item command.logo left                                         
                                           click_script="open -a 'System Preferences';                    
                                                         sketchybar -m --set command.logo popup.drawing=off" \
            --add item command.activity popup.command.logo                                                   \
-           --set      command.activity icon=󱕍                                                               \
+           --set      command.activity icon=$ICON_TASKMANAGER                                               \
                                        icon.color=$GREEN                                                    \
                                        icon.padding_left=4                                                  \
                                        icon.padding_right=2                                                 \
@@ -86,7 +87,7 @@ sketchybar --add item command.logo left                                         
                                        click_script="open -a 'Activity Monitor';                       
                                                      sketchybar -m --set command.logo popup.drawing=off"    \
            --add item command.lock popup.command.logo                                                       \
-           --set      command.lock icon=󰌾                                                                   \
+           --set      command.lock icon=$ICON_SLEEP                                                         \
                                    icon.color=$GREEN                                                        \
                                    icon.padding_left=4                                                      \
                                    icon.padding_right=2                                                     \
@@ -113,9 +114,9 @@ sketchybar --add item seperator.l1 left                   \
 # https://felixkratz.github.io/SketchyBar/config/components#space----associate-mission-control-spaces-with-an-item
 # to indicate active and available mission control spaces
 
-SPACE_ICONS=("" "" "" "" "" "" "")
-SPACE_LABELS=("Dev" "Browse" "Space" "Social" "Mail" "Calendar" "Music")
-SPACE_COLORS=($YELLOW $MAGENTA $CYAN $WHITE $BLUE $RED $GREEN)
+SPACE_ICONS=($ICON_SPACE $ICON_DEV $ICON_WEB $ICON_CHAT $ICON_MAIL $ICON_CAL $ICON_MUSIC)
+SPACE_LABELS=("Space" "Dev" "Web" "Chat" "Mail" "Calendar" "Music")
+SPACE_COLORS=($YELLOW $CYAN $MAGENTA $WHITE $BLUE $RED $GREEN)
 LENGTH=${#SPACE_ICONS[@]}
 
 for i in "${!SPACE_ICONS[@]}"
@@ -191,7 +192,7 @@ sketchybar --add item time right                        \
                            background.border_width=0    \
                            background.corner_radius=6   \
                            background.height=24         \
-                           icon=                       \
+                           icon=$ICON_CLOCK             \
                            icon.highlight=on            \
                            label.highlight=on           \
            --add item date right                        \
@@ -201,9 +202,9 @@ sketchybar --add item time right                        \
                            padding_right=2              \
                            background.border_width=0    \
                            background.height=24         \
-                           icon=                       \
-                           icon.color=$RED              \
-                           label.color=$RED
+                           icon=$ICON_CALENDAR          \
+                           icon.color=$YELLOW           \
+                           label.color=$YELLOW
 
 sketchybar --add bracket clock time date                    \
            --set         clock background.color=$BACKGROUND \
@@ -264,7 +265,7 @@ sketchybar --add item  swap right                        \
                             padding_right=8              \
                             background.border_width=0    \
                             background.height=24         \
-                            icon=                       \
+                            icon=$ICON_SWAP              \
                             icon.color=$CYAN             \
                             label.color=$CYAN            \
                                                          \
@@ -275,7 +276,7 @@ sketchybar --add item  swap right                        \
                            padding_right=2               \
                            background.border_width=0     \
                            background.height=24          \
-                           icon=                        \
+                           icon=$ICON_RAM                \
                            icon.color=$GREEN             \
                            label.color=$GREEN            \
                                                          \
@@ -286,7 +287,7 @@ sketchybar --add item  swap right                        \
                             padding_right=2              \
                             background.border_width=0    \
                             background.height=24         \
-                            icon=                       \
+                            icon=$ICON_DISK              \
                             icon.color=$YELLOW           \
                             label.color=$YELLOW          \
                                                          \
@@ -297,7 +298,7 @@ sketchybar --add item  swap right                        \
                            padding_right=2               \
                            background.border_width=0     \
                            background.height=24          \
-                           icon=                        \
+                           icon=$ICON_CPU                \
                            icon.color=$RED               \
                            label.color=$RED
 
