@@ -51,6 +51,6 @@ yabai -m config \
 	mouse_drop_action swap \
 	external_bar all:48:0
 
-yabai -m rule --add app="^(System Settings|System Information|FaceTime|Screen Sharing|Calculator|TinkerTool|Transmission)$" manage=off
+yabai -m rule --add app="^(System Settings|System Information|Activity Monitor|FaceTime|Screen Sharing|Calculator|Stickies|TinkerTool|Transmission)$" manage=off
 
 echo "yabai configuration loaded.."
