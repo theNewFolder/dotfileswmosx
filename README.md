@@ -107,12 +107,12 @@
 
 ## Other tools
 
+- [`btop`](https://github.com/aristocratos/btop#installation)
 - `cat` > [`bat`](https://github.com/sharkdp/bat#on-macos-or-linux-via-homebrew)
 - `find` > [`fd`](https://github.com/sharkdp/fd#on-macos)
 - [`fzf`](https://github.com/junegunn/fzf#using-homebrew)
   - `fzf` `fd` integration in part of [shell config](/.zshrc)
 - `grep` > [ripgrep (`rg`)](https://github.com/BurntSushi/ripgrep#installation)
-- [`gtop`](https://github.com/aksakalli/gtop#installation)
 - `ls` > [`exa`](https://github.com/ogham/exa#homebrew)
 - [`neofetch`](https://github.com/dylanaraps/neofetch/wiki/Installation#macos-homebrew)
 - [pipes-sh (`pipes.sh`)](https://formulae.brew.sh/formula/pipes-sh)
