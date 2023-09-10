@@ -171,25 +171,14 @@ sketchybar --add item chat left                               \
            --set      mail script="$PLUGIN_DIR/noti_mail.sh"  \
                            update_freq=60                     \
                            padding_left=2                     \
-                           padding_right=2                    \
+                           padding_right=8                    \
                            background.border_width=0          \
                            background.height=24               \
                            icon=$ICON_MAIL                    \
                            icon.color=$COLOR_BLUE             \
-                           label.color=$COLOR_BLUE            \
-                                                              \
-           --add item cal left                                \
-           --set      cal script="$PLUGIN_DIR/noti_cal.sh"    \
-                          update_freq=60                      \
-                          padding_left=2                      \
-                          padding_right=8                     \
-                          background.border_width=0           \
-                          background.height=24                \
-                          icon=$ICON_CALENDAR                 \
-                          icon.color=$COLOR_RED               \
-                          label.color=$COLOR_RED
+                           label.color=$COLOR_BLUE
 
-sketchybar --add bracket notifications chat mail cal                       \
+sketchybar --add bracket notifications chat mail                           \
            --set         notifications background.color=$COLOR_BACKGROUND  \
                                        background.border_color=$COLOR_CYAN
 
