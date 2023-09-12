@@ -10,9 +10,9 @@ git clone --recurse-submodules git@github.com:hbthen3rd/dotfiles.git
 
 ## Screenshots
 
-![Screenshot 1](/ss1.png?raw=true 'Screenshot 1')
-![Screenshot 2](/ss2.png?raw=true 'Screenshot 2')
-![Screenshot 3](/ss3.png?raw=true 'Screenshot 3')
+![Screenshot 1](/screenshot_1.png?raw=true 'Screenshot 1')
+![Screenshot 2](/screenshot_2.png?raw=true 'Screenshot 2')
+![Screenshot 3](/screenshot_3.png?raw=true 'Screenshot 3')
 
 ## Machine + OS
 
