@@ -80,7 +80,7 @@ git clone --recurse-submodules git@github.com:hbthen3rd/dotfiles.git
   - [neovim node](https://github.com/neovim/node-client#installation)
   - [neovim perl](https://neovim.io/doc/user/provider.html#provider-perl)
 
-# [Visual Studio Code](https://code.visualstudio.com/)
+### [Visual Studio Code](https://code.visualstudio.com/)
   - Fonts:
     - Editor: [Cascadia Code](https://github.com/microsoft/cascadia-code/releases/latest)
     - Terminal: [CaskaydiaCove Nerd Font](https://www.nerdfonts.com/font-downloads)
