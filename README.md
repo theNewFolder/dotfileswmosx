@@ -20,6 +20,8 @@ git clone --recurse-submodules git@github.com:hbthen3rd/dotfiles.git
 
 ## Desktop
 
+### [Gruvbox Wallpapers](https://github.com/AngelJumbo/gruvbox-wallpapers)
+
 ### [yabai](https://github.com/koekeishiya/yabai)
 
 - System Preferences > Desktop and Dock (**bold** is required):
