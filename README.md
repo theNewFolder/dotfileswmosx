@@ -156,7 +156,7 @@ git clone --recurse-submodules git@github.com:hbthen3rd/dotfiles.git
 
 ### [Arc](https://arc.net/)
 
-- [get-borderless-arc](https://github.com/ifvictr/get-borderless-arc)
+- [Get Borderless Arc](https://github.com/ifvictr/get-borderless-arc)
 
 ## Other tools
 
