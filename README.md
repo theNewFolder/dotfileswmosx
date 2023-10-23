@@ -10,11 +10,11 @@ git clone --recurse-submodules git@github.com:hbthen3rd/dotfiles.git
 
 ## Screenshots
 
-![btop, neofetch, tty-clock, unimatrix, pipes.sh](/screenshots/_screenshot1.png?raw=true 'btop, neofetch, tty-clock, unimatrix, pipes.sh')
+![btop, neofetch, tty-clock, unimatrix, pipes.sh](/screenshots/_screenshot1.png 'btop, neofetch, tty-clock, unimatrix, pipes.sh')
 
-![lazygit, neovim, bat](/screenshots/_screenshot2.png?raw=true 'lazygit, neovim, bat')
+![lazygit, neovim, bat](/screenshots/_screenshot2.png 'lazygit, neovim, bat')
 
-![Firefox, ranger, eza, Alfred](/screenshots/_screenshot3.png?raw=true 'Firefox, ranger, eza, Alfred')
+![Firefox, ranger, eza, Alfred](/screenshots/_screenshot3.png 'Firefox, ranger, eza, Alfred')
 
 ## Machine + OS
 
@@ -71,11 +71,11 @@ git clone --recurse-submodules git@github.com:hbthen3rd/dotfiles.git
 
 | | Neovim | Visual Studio Code |
 | :- | :-: | :-: |
-| Intellisense | ![neovim intellisense](/screenshots/code_neovim_intellisense.png?raw=true 'neovim intellisense') | ![Visual Studio Code intellisense](/screenshots/code_vscode_intellisense.png?raw=true 'Visual Studio Code intellisense') |
-| Terminal | ![neovim terminal](/screenshots/code_neovim_terminal.png?raw=true 'neovim terminal') | ![Visual Studio Code terminal](/screenshots/code_vscode_terminal.png?raw=true 'Visual Studio Code terminal') |
-| File search | ![neovim file search](/screenshots/code_neovim_filesearch.png?raw=true 'neovim file search') | ![Visual Studio Code file search](/screenshots/code_vscode_filesearch.png?raw=true 'Visual Studio Code file search') |
-| Source control | ![neovim source control](/screenshots/code_neovim_sourcecontrol.png?raw=true 'neovim source control') | ![Visual Studio Code source control](/screenshots/code_vscode_sourcecontrol.png?raw=true 'Visual Studio Code source control') |
-| Command palette | ![neovim command palette](/screenshots/code_neovim_commandpalette.png?raw=true 'neovim command palette') | ![Visual Studio Code command palette](/screenshots/code_vscode_commandpalette.png?raw=true 'Visual Studio Code command palette') |
+| Intellisense | ![neovim intellisense](/screenshots/code_neovim_intellisense.png 'neovim intellisense') | ![Visual Studio Code intellisense](/screenshots/code_vscode_intellisense.png 'Visual Studio Code intellisense') |
+| Terminal | ![neovim terminal](/screenshots/code_neovim_terminal.png 'neovim terminal') | ![Visual Studio Code terminal](/screenshots/code_vscode_terminal.png 'Visual Studio Code terminal') |
+| File search | ![neovim file search](/screenshots/code_neovim_filesearch.png 'neovim file search') | ![Visual Studio Code file search](/screenshots/code_vscode_filesearch.png 'Visual Studio Code file search') |
+| Source control | ![neovim source control](/screenshots/code_neovim_sourcecontrol.png 'neovim source control') | ![Visual Studio Code source control](/screenshots/code_vscode_sourcecontrol.png 'Visual Studio Code source control') |
+| Command palette | ![neovim command palette](/screenshots/code_neovim_commandpalette.png 'neovim command palette') | ![Visual Studio Code command palette](/screenshots/code_vscode_commandpalette.png 'Visual Studio Code command palette') |
 
 ### [Neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim#homebrew-on-macos-or-linux) + [Neovide](https://neovide.dev/installation.html#homebrew)
 
@@ -115,8 +115,8 @@ git clone --recurse-submodules git@github.com:hbthen3rd/dotfiles.git
 
 | | Ranger | Finder |
 | :- | :-: | :-: |
-| Code preview | ![ranger code preview](/screenshots/file_ranger_code.png?raw=true 'ranger code preview') | ![Finder code preview](/screenshots/file_finder_code.png?raw=true 'Finder code preview') |
-| Image preview | ![ranger image preview](/screenshots/file_ranger_image.png?raw=true 'ranger image preview') | ![Finder image preview](/screenshots/file_finder_image.png?raw=true 'Finder image preview') |
+| Code preview | ![ranger code preview](/screenshots/file_ranger_code.png 'ranger code preview') | ![Finder code preview](/screenshots/file_finder_code.png 'Finder code preview') |
+| Image preview | ![ranger image preview](/screenshots/file_ranger_image.png 'ranger image preview') | ![Finder image preview](/screenshots/file_finder_image.png 'Finder image preview') |
 
 ### [Ranger](https://github.com/ranger/ranger)
 
@@ -150,8 +150,8 @@ git clone --recurse-submodules git@github.com:hbthen3rd/dotfiles.git
 
 | | Firefox | Arc |
 | :- | :-: | :-: |
-| Web page | ![Firefox web page](/screenshots/web_firefox_webpage.png?raw=true 'Firefox web page') | ![Arc web page](/screenshots/web_arc_webpage.png?raw=true 'Arc web page') |
-| New tab page | ![Firefox new tab page](/screenshots/web_firefox_newtab.png?raw=true 'Firefox new tab page') | ![Arc new tab page](/screenshots/web_arc_newtab.png?raw=true 'Arc new tab page') |
+| Web page | ![Firefox web page](/screenshots/web_firefox_webpage.png 'Firefox web page') | ![Arc web page](/screenshots/web_arc_webpage.png 'Arc web page') |
+| New tab page | ![Firefox new tab page](/screenshots/web_firefox_newtab.png 'Firefox new tab page') | ![Arc new tab page](/screenshots/web_arc_newtab.png 'Arc new tab page') |
 
 ### [Firefox](https://www.mozilla.org/en-US/firefox/new/)
 
