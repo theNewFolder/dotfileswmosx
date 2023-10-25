@@ -28,6 +28,12 @@ git clone --recurse-submodules git@github.com:hbthen3rd/dotfiles.git
 
 - System Preferences > Desktop and Dock (**bold** is required):
   - **Mission Control: uncheck "Automatically rearrange Spaces based on most recent use"**
+  - Desktop & Stage Manager:
+    - Show Items: uncheck "On Desktop"
+    - Set "Click wallpaper to reveal desktop" to "Always"
+  - Desktop & Stage Manager > Widgets:
+    - Show Widgets: uncheck "On Desktop"
+    - Set "Widget style" to "Full-color"
 - _Some advanced features of `yabai` [requires SIP to be disabled](https://github.com/koekeishiya/yabai/wiki/Disabling-System-Integrity-Protection)._ _**However, disabling SIP will also disable Apple Pay on your Mac.**_ **For my setup, I left SIP enabled. My configs doesn't use any advanced feature from `yabai`**
 
 ### [sketchybar](https://github.com/FelixKratz/SketchyBar)
@@ -66,6 +72,41 @@ git clone --recurse-submodules git@github.com:hbthen3rd/dotfiles.git
   - [Powerlevel10k](https://github.com/romkatv/powerlevel10k#oh-my-zsh)
 
 ### [Homebrew](https://brew.sh/)
+
+## File Manager
+
+| | Ranger | Finder |
+| :- | :-: | :-: |
+| Code preview | ![ranger code preview](/screenshots/file_ranger_code.png 'ranger code preview') | ![Finder code preview](/screenshots/file_finder_code.png 'Finder code preview') |
+| Image preview | ![ranger image preview](/screenshots/file_ranger_image.png 'ranger image preview') | ![Finder image preview](/screenshots/file_finder_image.png 'Finder image preview') |
+
+### [Ranger](https://github.com/ranger/ranger)
+
+- Install from HEAD commit instead of pre-built binary: `brew install --HEAD ranger`
+- File preview dependencies (**bold** is required):
+  - **[ImageMagick](https://formulae.brew.sh/formula/imagemagick)**
+  - **[librsvg (`rsvg-convert`)](https://formulae.brew.sh/formula/librsvg)**
+  - **[djvulibre (`ddjvu`)](https://formulae.brew.sh/formula/djvulibre)**
+  - **[ffmpeg](https://formulae.brew.sh/formula/ffmpeg)**
+  - **[ffmpegthumbnailer](https://formulae.brew.sh/formula/ffmpegthumbnailer)**
+  - **[poppler (`pdftoppm`)](https://formulae.brew.sh/formula/poppler)**
+  - [fontforge (`fontimage`)](https://formulae.brew.sh/formula/fontforge)
+  - [pandoc](https://formulae.brew.sh/formula/pandoc)
+  - [mu](https://formulae.brew.sh/formula/mu)
+  - [xlsx2csv](https://github.com/dilshod/xlsx2csv): `pip3 install xlsx2csv`
+  - [exiftool](https://formulae.brew.sh/formula/exiftool)
+  - [media-info (`mediainfo`)](https://formulae.brew.sh/formula/media-info)
+  - [binutils (`readelf`)](https://formulae.brew.sh/formula/binutils)
+  - [rar (`unrar`)](https://formulae.brew.sh/cask/rar)
+  - [p7zip (`7z`)](https://formulae.brew.sh/formula/p7zip)
+  - [odt2txt](https://formulae.brew.sh/formula/odt2txt)
+  - [w3m](https://formulae.brew.sh/formula/w3m)
+  - [jq](https://formulae.brew.sh/formula/jq)
+
+### Finder
+
+- `cmd` + `3` to View as Columns
+- `cmd` + `shift` + `.` to Show Hidden files
 
 ## Code Editor
 
@@ -111,41 +152,6 @@ git clone --recurse-submodules git@github.com:hbthen3rd/dotfiles.git
 
 ### [Lazygit](https://github.com/jesseduffield/lazygit#homebrew)
 
-## File Manager
-
-| | Ranger | Finder |
-| :- | :-: | :-: |
-| Code preview | ![ranger code preview](/screenshots/file_ranger_code.png 'ranger code preview') | ![Finder code preview](/screenshots/file_finder_code.png 'Finder code preview') |
-| Image preview | ![ranger image preview](/screenshots/file_ranger_image.png 'ranger image preview') | ![Finder image preview](/screenshots/file_finder_image.png 'Finder image preview') |
-
-### [Ranger](https://github.com/ranger/ranger)
-
-- Install from HEAD commit instead of pre-built binary: `brew install --HEAD ranger`
-- File preview dependencies (**bold** is required):
-  - **[ImageMagick](https://formulae.brew.sh/formula/imagemagick)**
-  - **[librsvg (`rsvg-convert`)](https://formulae.brew.sh/formula/librsvg)**
-  - **[djvulibre (`ddjvu`)](https://formulae.brew.sh/formula/djvulibre)**
-  - **[ffmpeg](https://formulae.brew.sh/formula/ffmpeg)**
-  - **[ffmpegthumbnailer](https://formulae.brew.sh/formula/ffmpegthumbnailer)**
-  - **[poppler (`pdftoppm`)](https://formulae.brew.sh/formula/poppler)**
-  - [fontforge (`fontimage`)](https://formulae.brew.sh/formula/fontforge)
-  - [pandoc](https://formulae.brew.sh/formula/pandoc)
-  - [mu](https://formulae.brew.sh/formula/mu)
-  - [xlsx2csv](https://github.com/dilshod/xlsx2csv): `pip3 install xlsx2csv`
-  - [exiftool](https://formulae.brew.sh/formula/exiftool)
-  - [media-info (`mediainfo`)](https://formulae.brew.sh/formula/media-info)
-  - [binutils (`readelf`)](https://formulae.brew.sh/formula/binutils)
-  - [rar (`unrar`)](https://formulae.brew.sh/cask/rar)
-  - [p7zip (`7z`)](https://formulae.brew.sh/formula/p7zip)
-  - [odt2txt](https://formulae.brew.sh/formula/odt2txt)
-  - [w3m](https://formulae.brew.sh/formula/w3m)
-  - [jq](https://formulae.brew.sh/formula/jq)
-
-### Finder
-
-- `cmd` + `3` to View as Columns
-- `cmd` + `shift` + `.` to Show Hidden files
-
 ## Web Browser
 
 | | Firefox | Arc |
@@ -164,7 +170,6 @@ git clone --recurse-submodules git@github.com:hbthen3rd/dotfiles.git
   - `onebar.hide-navigation-buttons          : false`
 - Color and layout tweaks to [Browser XUL](/manual-application/Firefox/userChrome.css) and [`:about` pages](/manual-application/Firefox/userContent.css) to match Gruvbox Dark (Hard) color (Firefox Onebar included)
   - **Only Dark theme is supported, no light theme or high-contrast theme support**
-- System Preferences > Desktop and Dock > Default web browser: Firefox
 
 ### [Arc](https://arc.net/)
 
