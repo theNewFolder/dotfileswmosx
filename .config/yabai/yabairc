@@ -48,6 +48,4 @@ yabai -m rule --add app="^(System Settings|System Information|Activity Monitor|F
 yabai -m signal --add event=window_created action="sketchybar -m --trigger window_change &> /dev/null"
 yabai -m signal --add event=window_destroyed action="sketchybar -m --trigger window_change &> /dev/null"
 
-borders active_color=$COLOR_ACCENT_BRIGHT inactive_color=$COLOR_BACKGROUND width=4.0 2>/dev/null 1>&2 &
-
 echo "yabai configuration loaded.."
