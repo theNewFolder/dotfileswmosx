@@ -18,7 +18,7 @@ git clone --recurse-submodules git@github.com:hbthen3rd/dotfiles.git
 
 ## Machine + OS
 
-- M2 MacBook Air / macOS Sonoma 14.0
+- M2 MacBook Air / macOS Sonoma 14.2.1
 
 ## Desktop
 
