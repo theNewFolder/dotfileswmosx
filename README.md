@@ -18,11 +18,9 @@ git clone --recurse-submodules git@github.com:hbthen3rd/dotfiles.git
 
 ## Machine + OS
 
-- M2 MacBook Air / macOS Sonoma 14.0
+- M2 MacBook Air / macOS Sonoma 14.2.1
 
 ## Desktop
-
-### [Gruvbox Wallpapers](https://github.com/AngelJumbo/gruvbox-wallpapers)
 
 ### [yabai](https://github.com/koekeishiya/yabai)
 
@@ -181,8 +179,6 @@ git clone --recurse-submodules git@github.com:hbthen3rd/dotfiles.git
   - **Only Dark theme is supported, no light theme or high-contrast theme support**
 
 ### [Arc](https://arc.net/)
-
-- [Get Borderless Arc](https://github.com/ifvictr/get-borderless-arc)
 
 ## Other tools
 
