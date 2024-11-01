@@ -138,6 +138,9 @@ git clone --recurse-submodules git@github.com:hbthen3rd/dotfiles.git
   - [neovim perl](https://neovim.io/doc/user/provider.html#provider-perl)
 
 ### [Zed](https://zed.dev/download)
+  - Fonts:
+    - Editor: [Cascadia Code](https://github.com/microsoft/cascadia-code/releases/latest)
+    - Terminal: [CaskaydiaCove Nerd Font](https://www.nerdfonts.com/font-downloads)
 
 ### [Visual Studio Code](https://code.visualstudio.com/)
   - Fonts:
