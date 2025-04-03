@@ -116,13 +116,13 @@ git clone --recurse-submodules git@github.com:hbthen3rd/dotfiles.git
 ## Code Editor
 
 
-| | neovim | Zed |
-| :- | :-: | :-: |
-| Intellisense | ![neovim intellisense](/screenshots/neovim_intellisense.png 'neovim intellisense') | ![Zed intellisense](/screenshots/zed_intellisense.png 'Zed intellisense') |
-| Terminal | ![neovim terminal](/screenshots/neovim_terminal.png 'neovim terminal') | ![Zed terminal](/screenshots/zed_terminal.png 'Zed terminal') |
-| File search | ![neovim file search](/screenshots/neovim_filesearch.png 'neovim file search') | ![Zed file search](/screenshots/zed_filesearch.png 'Zed file search') |
-| Source control | ![neovim source control](/screenshots/neovim_sourcecontrol.png 'neovim source control') | ![Zed source control](/screenshots/zed_sourcecontrol.png 'Zed source control') |
-| Command palette | ![neovim command palette](/screenshots/neovim_commandpalette.png 'neovim command palette') | ![Zed command palette](/screenshots/zed_commandpalette.png 'Zed command palette') |
+| | neovim | Zed | Code |
+| :- | :-: | :-: | :-: |
+| Intellisense | ![neovim intellisense](/screenshots/neovim_intellisense.png 'neovim intellisense') | ![Zed intellisense](/screenshots/zed_intellisense.png 'Zed intellisense') | _screenshot tba_ |
+| Terminal | ![neovim terminal](/screenshots/neovim_terminal.png 'neovim terminal') | ![Zed terminal](/screenshots/zed_terminal.png 'Zed terminal') | _screenshot tba_ |
+| File search | ![neovim file search](/screenshots/neovim_filesearch.png 'neovim file search') | ![Zed file search](/screenshots/zed_filesearch.png 'Zed file search') | _screenshot tba_ |
+| Source control | ![neovim source control](/screenshots/neovim_sourcecontrol.png 'neovim source control') | ![Zed source control](/screenshots/zed_sourcecontrol.png 'Zed source control') | _screenshot tba_ |
+| Command palette | ![neovim command palette](/screenshots/neovim_commandpalette.png 'neovim command palette') | ![Zed command palette](/screenshots/zed_commandpalette.png 'Zed command palette') | _screenshot tba_ |
 
 ### [neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim#homebrew-on-macos-or-linux) + [Neovide](https://neovide.dev/installation.html#homebrew)
 
@@ -157,11 +157,12 @@ git clone --recurse-submodules git@github.com:hbthen3rd/dotfiles.git
 
 ## Web Browser
 
-| | Zen Browser | Arc |
-| :- | :-: | :-: |
-| Web page | ![Zen Browser web page](/screenshots/zenbrowser_webpage.png 'Zen Browser web page') | ![Arc web page](/screenshots/arc_webpage.png 'Arc web page') |
-| Split screen | ![Zen Browser split screen](/screenshots/zenbrowser_splitscreen.png 'Zen Browser split screen') | ![Arc split screen](/screenshots/arc_splitscreen.png 'Arc split screen') |
-| New tab page | ![Zen Browser new tab page](/screenshots/zenbrowser_newtab.png 'Zen Browser new tab page') | ![Arc new tab page](/screenshots/arc_newtab.png 'Arc new tab page') |
+| | Zen Browser | Arc | Orion |
+| :- | :-: | :-: | :-: |
+| Rendering engine | Gecko | Blink | Webkit |
+| Web page | ![Zen Browser web page](/screenshots/zenbrowser_webpage.png 'Zen Browser web page') | ![Arc web page](/screenshots/arc_webpage.png 'Arc web page') | _screenshot tba_ |
+| Split screen | ![Zen Browser split screen](/screenshots/zenbrowser_splitscreen.png 'Zen Browser split screen') | ![Arc split screen](/screenshots/arc_splitscreen.png 'Arc split screen') | _screenshot tba_ |
+| New tab page | ![Zen Browser new tab page](/screenshots/zenbrowser_newtab.png 'Zen Browser new tab page') | ![Arc new tab page](/screenshots/arc_newtab.png 'Arc new tab page') | _screenshot tba_ |
 
 ### [Zen Browser](https://zen-browser.app/download)
   - [Now playing indicator](https://zen-browser.app/mods/2e3369c7-e450-46ba-8794-75ccb0de5e48)
@@ -169,6 +170,8 @@ git clone --recurse-submodules git@github.com:hbthen3rd/dotfiles.git
   - [Floating Status Bar](https://zen-browser.app/mods/906c6915-5677-48ff-9bfc-096a02a72379)
 
 ### [Arc](https://arc.net/)
+
+### [Orion](https://kagi.com/orion/)
 
 ## Other tools
 
@@ -178,7 +181,7 @@ git clone --recurse-submodules git@github.com:hbthen3rd/dotfiles.git
 - [`fzf`](https://github.com/junegunn/fzf#using-homebrew)
   - `fzf` `fd` integration in part of [shell config](/.zshrc)
 - `grep` > [ripgrep (`rg`)](https://github.com/BurntSushi/ripgrep#installation)
-- `ls` > [`eza`](https://github.com/eza-community/eza#brew-macos)
+- `ls` > [`eza`](https://github.com/eza-community/eza/blob/main/INSTALL.md#brew-macos)
 - [`neofetch`](https://github.com/dylanaraps/neofetch/wiki/Installation#macos-homebrew)
 - [pipes-sh (`pipes.sh`)](https://formulae.brew.sh/formula/pipes-sh)
 - `ps` > [`procs`](https://github.com/dalance/procs#homebrew)
@@ -187,3 +190,4 @@ git clone --recurse-submodules git@github.com:hbthen3rd/dotfiles.git
   - [`taskwarrior-tui`](https://kdheepak.com/taskwarrior-tui/installation/)
 - [`tty-clock`](https://formulae.brew.sh/formula/tty-clock)
 - [`unimatrix`](https://github.com/will8211/unimatrix): `pip3 install git+https://github.com/will8211/unimatrix.git`
+- [`zoxide`](https://github.com/ajeetdsouza/zoxide?tab=readme-ov-file#installation)
