@@ -77,7 +77,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(z zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(colored-man-pages fzf git zsh-autosuggestions zsh-syntax-highlighting zoxide)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -116,7 +116,12 @@ alias vim="nvim"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# Using fd with fzf
-export FZF_DEFAULT_COMMAND='fd --type file --color=always --follow --hidden --exclude .git'
-export FZF_DEFAULT_OPTS="--ansi --border"
+# fzf config
+export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
+  --border="rounded" --preview-window="border-rounded"
+  --layout="reverse-list"'
+# fzf integration with fd
+export FZF_DEFAULT_COMMAND='fd --type file --follow --hidden --exclude .git'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_DEFAULT_COMMAND="fd --type file --color=always"
+export FZF_DEFAULT_OPTS="--ansi"
